@@ -234,6 +234,13 @@ PRODUCT_COPY_FILES += \
     device/essential/mata/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     device/essential/mata/configs/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# Overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay \
+    NotchBarKiller \
+    NotchCutoutOverlay \
+    CamouflageCutoutOverlay
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
