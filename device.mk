@@ -263,7 +263,10 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    NoCutoutOverlay \
+    NotchBarKiller \
+    NotchCutoutOverlay \
+    CamouflageCutoutOverlay
 
 # OMX
 PRODUCT_PACKAGES += \
