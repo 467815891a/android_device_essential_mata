@@ -238,7 +238,9 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    NoCutoutOverlay \
+    IgnoreCutoutOverlay \
+    NotchCutoutOverlay
 
 # OMX
 PRODUCT_PACKAGES += \
