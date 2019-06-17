@@ -3,3 +3,6 @@ allow init hbtp_cmd:process { transition noatsecure siginh rlimitinh };
 allow init hbtp_cmd_exec:file execute;
 allow init sysfs_graphics:lnk_file { r_file_perms setattr };
 allow init sysfs_scsi_devices_0000:{ dir file } relabelfrom;
+allow init hal_power_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+
