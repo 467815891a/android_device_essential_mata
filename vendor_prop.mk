@@ -97,8 +97,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1
+    persist.dbg.vt_avail_ovr=0 \
+    persist.data.iwlan.enable=true \
+    persist.dbg.wfc_avail_ovr=1
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
