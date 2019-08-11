@@ -10,7 +10,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    vendor.camera.aux.packagelist="org.codeaurora.snapcam,com.essential.klik,org.lineageos.snap"
+    vendor.camera.aux.packagelist="org.codeaurora.snapcam,com.essential.klik,org.mokee.snap"
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
