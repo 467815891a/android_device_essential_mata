@@ -373,10 +373,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libtinyxml2
 
-# TFA calibration
-PRODUCT_PACKAGES += \
-    tinyplay
-
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.mokee.trust@1.0-service
