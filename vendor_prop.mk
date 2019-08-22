@@ -181,3 +181,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
+
+# SSR
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.ssr.restart_level=modem,slpi,adsp
