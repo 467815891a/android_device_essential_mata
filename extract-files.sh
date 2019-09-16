@@ -25,9 +25,9 @@ VENDOR=essential
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-AICP_ROOT="$MY_DIR"/../../..
+MK_ROOT="$MY_DIR"/../../..
 
-HELPER="$AICP_ROOT"/vendor/aicp/build/tools/extract_utils.sh
+HELPER="$MK_ROOT"/vendor/mokee/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -53,16 +53,16 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$AICP_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-recovery.txt "$SRC" "$SECTION"
 
-sed -i 's/service fps_hal_mata/service vendor.fps_hal_mata/g' "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc
-sed -i 's/service sidecar-hal-1-0/service vendor.sidecar-hal-1-0/g' "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/etc/init/vendor.essential.hardware.sidecar@1.0-service.rc
+sed -i 's/service fps_hal_mata/service vendor.fps_hal_mata/g' "$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.mata.rc
+sed -i 's/service sidecar-hal-1-0/service vendor.sidecar-hal-1-0/g' "$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/etc/init/vendor.essential.hardware.sidecar@1.0-service.rc
 
-patchelf --add-needed "libbase_shim.so" "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/bin/imsrcsd
-patchelf --add-needed "libbase_shim.so" "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/lib-imsrcs-v2.so
-patchelf --add-needed "libbase_shim.so" "$AICP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/lib-uceservice.so
+patchelf --add-needed "libbase_shim.so" "$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/bin/imsrcsd
+patchelf --add-needed "libbase_shim.so" "$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/lib-imsrcs-v2.so
+patchelf --add-needed "libbase_shim.so" "$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/lib-uceservice.so
 
 "$MY_DIR"/setup-makefiles.sh

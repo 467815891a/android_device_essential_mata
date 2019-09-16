@@ -184,6 +184,10 @@ PRODUCT_COPY_FILES += \
     device/essential/mata/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     device/essential/mata/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf
 
+# HDR
+PRODUCT_COPY_FILES += \
+    device/essential/mata/configs/hdr_tm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_tm_config.xml
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.mata
@@ -386,6 +390,10 @@ PRODUCT_COPY_FILES += \
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
+
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.mokee.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
