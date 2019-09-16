@@ -1,18 +1,18 @@
 [
   {
-    "repository":  "AICP/proprietary_vendor_essential",
+    "repository":  "467815891a/vendor_essential",
     "target_path": "vendor/essential",
-    "branch":      "p9.0"
+    "branch":      "mkq"
   },
   {
-    "repository":  "AICP/kernel_essential_msm8998",
+    "repository":  "celtare21/kernel_essential_msm8998-1",
     "target_path": "kernel/essential/msm8998",
-    "branch":      "p9.0"
+    "branch":      "master_2"
   },
   {
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "repository":  "MoKee/android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-16.0"
+    "branch":      "mkq"
   },
   {
     "repository":  "kdrag0n/aarch64-elf-gcc",

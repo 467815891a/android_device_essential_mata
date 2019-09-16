@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device.widget;
+package org.mokee.settings.device.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -33,7 +33,7 @@ import androidx.preference.PreferenceViewHolder;
 
 import com.android.settingslib.RestrictedPreference;
 
-import org.lineageos.settings.device.R;
+import org.mokee.settings.device.R;
 
 /**
  * Based on android.preference.SeekBarPreference, but uses support preference as base.

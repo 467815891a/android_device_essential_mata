@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES += \
-    device/essential/mata/lineage_mata.mk
+    device/essential/mata/mokee_mata.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_mata-user \
-    aicp_mata-userdebug \
-    aicp_mata-eng
+    mokee_mata-user \
+    mokee_mata-userdebug \
+    mokee_mata-eng

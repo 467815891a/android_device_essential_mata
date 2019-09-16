@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.device;
+package org.mokee.settings.device;
 
 import android.app.ActionBar;
 import android.content.SharedPreferences;
@@ -26,8 +26,8 @@ import android.view.MenuItem;
 
 import androidx.preference.PreferenceFragment;
 
-import org.lineageos.settings.device.R;
-import org.lineageos.settings.device.widget.SeekBarPreference;
+import org.mokee.settings.device.R;
+import org.mokee.settings.device.widget.SeekBarPreference;
 
 public class TouchscreenSettingsFragment extends PreferenceFragment
         implements SharedPreferences.OnSharedPreferenceChangeListener {
