@@ -211,7 +211,7 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery.wipe
 BOARD_ROOT_EXTRA_FOLDERS := dsp firmware persist
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-01-05
+VENDOR_SECURITY_PATCH := 2020-02-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
